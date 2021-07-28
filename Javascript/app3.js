@@ -16,8 +16,15 @@ while(chances > 1){
     break;
   } else {
     chances--;
-    yes = prompt("Try again!");
-    
+    // yes = prompt("Try again!");
+    if (guess > number) {
+      alert("Too high!");
+      yes = prompt("Try again!")
+    }
+    if (guess < number) {
+      alert("Too low!");
+      yes = prompt("Try again!")
+    }
   }
    
    
