@@ -72,3 +72,4 @@ if(lowerfavTech === 'n' || lowerfavTech === 'no' ){
     //console.log('No sorry.. Windows is superior')
     alert('No sorry.. Windows is superior')
 };
+
