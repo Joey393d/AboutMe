@@ -1,5 +1,43 @@
 'use strict';
-console.log('app2.js is now connected')
+console.log('app2.js is now connected');
+
+
+let favFood = ['pizza', 'pudding', 'grapes'];
+let attempts = 6;
+
+
+var user = prompt("What is my favorite food?");
+while (attempts > 1){
+    var lowerCaseFood = user.toLowerCase;
+    if (favFood === lowerCaseFood){
+    alert("That's right!");
+} 
+//   else {
+//         attempts--;
+//         user= prompt("That sounds pretty good, but try again.")
+//     }
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 let myName = prompt('First is an easy one. Is my full first name Joseph?')
 console.log("this is the user input", myName)

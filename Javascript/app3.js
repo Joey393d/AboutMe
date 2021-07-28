@@ -26,23 +26,6 @@ while(chances > 1){
       yes = prompt("Try again!")
     }
   }
-   
-   
-   
-   
-   
-   
-  // rewrite to handle if something is too high or too low.  
-  // else{
-  // if (guess < number); {
-  //   alert("Too low! try again!");
-  //    chances -= 1;
-  //   }
-  // if (guess > number); {
-  //    alert("Too high! try again!");
-  //    chances -= 1;
-  //  }
-  // }
   
 
 
