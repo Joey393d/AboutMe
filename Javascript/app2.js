@@ -2,25 +2,42 @@
 console.log('app2.js is now connected');
 
 
-let favFood = ['pizza', 'pudding', 'grapes'];
-let attempts = 6;
 
 
-var user = prompt("What is my favorite food?");
-while (attempts > 1){
-    var lowerCaseFood = user.toLowerCase;
-    if (favFood === lowerCaseFood){
-    alert("That's right!");
-} 
-//   else {
-//         attempts--;
-//         user= prompt("That sounds pretty good, but try again.")
-//     }
+var attempts = 6;
 
+for (let favFood = ["pizza", "pudding", "grapes"]; attempts > 1;--attempts) {
+    
+    var user = prompt("What is my favorite food?");
+
+    if (favFood === user){
+        alert("That's right!");
+    }
+    else{
+        alert("Sorry that sounds good but try again")
+    }
 
 }
 
 
+
+
+
+
+
+// while (attempts > 1){
+    
+//     if (favFood === user){
+//     alert("That's right!");
+// break;
+// } 
+//   else {
+//         attempts--;
+//         user= prompt("That sounds pretty good, but try again.");
+//     }
+
+
+// }
 
 
 
