@@ -1,24 +1,13 @@
 'use strict';
 console.log('app2.js is now connected');
 
+function questions(){
 
 let favFood = ["PIZZA", "PUDDING", "GRAPES"];
-
+let userData = 0;
 var attempts = 0;
 
-while(attempts !== 7){
-        let user = prompt("What is my favorite food?");
-        let userAnswer = user.toUpperCase().trim();
-        console.log('userAnswer ' + userAnswer);
-    if(favFood.indexOf(userAnswer) >= 0) {
-        alert('Yes! ' + userAnswer + ' is one of my favorite foods!');
-            correctAnswer = correctAnswer + 1;
-    } else {
-        alert("You're wrong!")
-    }
-    attempts = attempts + 1;
 
-}
 
 
 
@@ -65,6 +54,7 @@ console.log('this is answer lowercase', lowerCaseName)
 if(lowerCaseName === 'y' || lowerCaseName=== 'yes' ){
     //console.log('You are correct!');
     alert('You are correct!');
+    userData++;
 }   else {
     //console.log('Sorry, that is wrong...')
     alert('Sorry, that is wrong...')
@@ -79,6 +69,7 @@ console.log('this is answer lowercase', lowerCaseColor)
 if(lowerCaseColor === 'y' || lowerCaseColor === 'yes' ){
     // console.log('You are correct!');
     alert('You are correct!');
+    userData++;
 }   else {
     //console.log('Sorry, that is wrong...')
     alert('Sorry, that is wrong...')
@@ -94,6 +85,7 @@ console.log('this is answer lowercase', loweramI)
 if(loweramI === 'y' || loweramI === 'yes' ){
     //console.log('Or am I?');
     alert('Or am I?');
+    userData++;
 }   else {
     //console.log('Really? You dont think so?')
     alert('Really? You dont think so?')
@@ -109,6 +101,7 @@ console.log('this is answer lowercase', lowerfavAnimal)
 if(lowerfavAnimal === 'n' || lowerfavAnimal === 'no' ){
     //console.log('Correct! My favorite is a Joey!');
     alert('Correct! My favorite is a Joey!');
+    userData++;
 }   else {
     //console.log('No sorry.. It is a Joey!')
     alert('No sorry.. It is a Joey!')
@@ -123,8 +116,27 @@ console.log('this is answer lowercase', lowerfavTech)
 if(lowerfavTech === 'n' || lowerfavTech === 'no' ){
     //console.log('Correct! Windows for the win!');
     alert('Correct! Windows for the win!');
+    userData++;
 }   else {
     //console.log('No sorry.. Windows is superior')
     alert('No sorry.. Windows is superior')
 };
+
+while(attempts !== 7){
+    let user = prompt("What is my favorite food?");
+    let userAnswer = user.toUpperCase().trim();
+    console.log('userAnswer ' + userAnswer);
+if(favFood.indexOf(userAnswer) >= 0) {
+    alert('Yes! ' + userAnswer + ' is one of my favorite foods!');
+        correctAnswer = correctAnswer + 1;
+        userData++;
+        break;
+} else {
+    alert("You're wrong!")
+    attempts = attempts + 1;
+}
+}
+alert("Congratulations! Your total points are ", + userData)
+}
+questions()
 
