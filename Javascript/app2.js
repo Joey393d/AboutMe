@@ -2,23 +2,23 @@
 console.log('app2.js is now connected');
 
 
+let favFood = ["PIZZA", "PUDDING", "GRAPES"];
 
+var attempts = 0;
 
-var attempts = 6;
-
-for (let favFood = ["pizza", "pudding", "grapes"]; attempts > 1;--attempts) {
-    
-    var user = prompt("What is my favorite food?");
-
-    if (favFood === user){
-        alert("That's right!");
+while(attempts !== 7){
+        let user = prompt("What is my favorite food?");
+        let userAnswer = user.toUpperCase().trim();
+        console.log('userAnswer ' + userAnswer);
+    if(favFood.indexOf(userAnswer) >= 0) {
+        alert('Yes! ' + userAnswer + ' is one of my favorite foods!');
+            correctAnswer = correctAnswer + 1;
+    } else {
+        alert("You're wrong!")
     }
-    else{
-        alert("Sorry that sounds good but try again")
-    }
+    attempts = attempts + 1;
 
 }
-
 
 
 
